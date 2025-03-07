@@ -1,0 +1,16 @@
+h1{
+    /* border:2px solid black; */
+    /* padding: 100px;
+    margin: 100px; */
+    color: #E21C70;
+    text-align: center;
+    /* text-decoration: line-through; */
+    text-transform: capitalize;
+    text-shadow:2px 2px 3px green ;
+    letter-spacing: 20px;
+    word-spacing: 40px;
+}
+
+p{
+    line-height: 2;
+}

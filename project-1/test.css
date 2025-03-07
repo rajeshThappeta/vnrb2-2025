@@ -1,0 +1,27 @@
+#heading1{
+    color:red;
+    font-size: 50px;
+}
+
+#heading2{
+    color:orange;
+    font-size: 100px;
+}
+
+.content{
+    color: cornflowerblue;
+}
+
+
+#demo1{
+    color:green;
+}
+
+.demo2{
+    color:lightcoral;
+}
+
+
+h2{
+    color:lightpink;
+}
