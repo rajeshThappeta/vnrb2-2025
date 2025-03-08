@@ -1,16 +1,22 @@
-h1{
-    /* border:2px solid black; */
-    /* padding: 100px;
-    margin: 100px; */
-    color: #E21C70;
-    text-align: center;
-    /* text-decoration: line-through; */
-    text-transform: capitalize;
-    text-shadow:2px 2px 3px green ;
-    letter-spacing: 20px;
-    word-spacing: 40px;
-}
 
-p{
-    line-height: 2;
+
+/* single bg color */
+/* body{
+    background-color: lightcoral;
+}
+h1{
+    background-color: lightblue;
+} */
+
+/* multicolor bg */
+/* h1{
+    background-image:linear-gradient(to right,red,orange,lightblue) ;
+} */
+
+/* img in bg */
+body{
+    background-image: url('../assets/products/product-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }

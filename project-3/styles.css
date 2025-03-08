@@ -1,0 +1,39 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-heading{
+    text-align: center;
+    background-color:slategray;
+    color:white;
+    padding: 50px;
+    font-size: 3rem;
+   
+}
+
+.tech-stack{
+    text-align: center;
+    color: lightskyblue;
+    font-size: 2.3rem;
+    padding: 50px;
+}
+
+.web-tech{
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:green;
+}
+
+.gap{
+    margin-top: 700px;
+    margin-bottom: 700px;
+    padding: 100px;
+}
