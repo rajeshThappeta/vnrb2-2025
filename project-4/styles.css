@@ -1,0 +1,51 @@
+h1:hover{
+    color:red;
+    background-color: burlywood;
+    font-size: 2.5rem;
+}
+
+/* li:first-child{
+    color:red;
+} */
+
+li:nth-child(odd){
+    color:red;
+}
+
+li::before{
+    content: '👉';
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:orange;
+}
+
+a:active{
+    color:green;
+}
+
+a:hover{
+    color:white;
+    background-color: black;
+}
+
+/* p::before{
+    content:'😎' ;
+}
+
+p::after{
+    content: "⚾️";
+} */
+
+p::first-letter{
+    color: lightblue;
+    font-size: 3rem;
+}
+
+.para::first-line{
+    color:blue;
+}

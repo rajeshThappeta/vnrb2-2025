@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.header{
+    background-image: url('../assets/demo-images/pexels-stefan-straka-27723-823841.jpg');
+    text-align: right;
+    background-size: 100% 600px;
+    opacity: 0.8;
+}
+
+.header h1{
+    font-size: 5rem;
+    color:white;
+    padding: 100px 100px 0px 0px;
+}
+
+.header p{
+    color:lightgray;
+    padding: 20px 100px 100px 0px;
+    font-size: 2rem;
+}
+
+.main{
+    margin: 50px 100px;
+}
+
+.main h2{
+    text-align: center;
+    font-size: 3.5rem;
+    color:lightskyblue;
+}
+
+.main p{
+    color:lightslategray;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-indent: 100px;
+    margin-bottom: 100px;
+}
+
+.main p::first-letter{
+    font-size: 2.5rem;
+
+}
+
+img{
+    width: 250px;
+    
+}
+
+.img1{
+    float: left;
+}
+.img2{
+    float: right;
+}
+.img3{
+    display: block;
+    margin: auto;
+}
+
+
+img:hover{
+    background-color: lightskyblue;
+    box-shadow: 0px 0px 25px lightskyblue;
+}
+
+
+
