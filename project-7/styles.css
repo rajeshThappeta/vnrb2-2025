@@ -1,0 +1,29 @@
+.parent {
+    width: 700px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.child1 {
+    background-color: red;
+    position: sticky;
+    top:50px;
+}
+
+.child2 {
+    background-color: green;
+}
+
+.child3 {
+    background-color: blue;
+}
+
+/* top , bottom , left and right */

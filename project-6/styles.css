@@ -1,0 +1,33 @@
+/* inline vs block vs inline-block */
+
+
+
+a{
+    background-color: lightcoral;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+}
+
+.img1{
+    width: 300px;
+    height: 300px;
+}
+
+
+/* border radius */
+h1{
+    border: 10px solid black;
+    padding: 100px;
+    border-radius: 500px;
+}
+
+.img1{
+    border-radius: 50%;
+}   
+
+
+/* Using Google fonts */
+.para{
+    font-family:  ;
+}
