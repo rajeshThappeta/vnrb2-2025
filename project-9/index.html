@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- table -->
+    <table>
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>Ravi</td>
+                <td>Developer</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Bhanu</td>
+                <td>Test engineer</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>Vikas</td>
+                <td>DevOps Engineer</td>
+                <td>300000</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Madhu</td>
+                <td>Manager</td>
+                <td>500000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- rowspan -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">100</td>
+                <td rowspan="3">Ravi</td>
+                <td>Maths</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td rowspan="3">200</td>
+                <td rowspan="3">Vikas</td>
+                <td>Maths</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>87</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- colspan -->
+     <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Expence</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arun</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sum : 30000</td>
+               
+            </tr>
+        </tbody>
+     </table>
+
+</body>
+
+</html>

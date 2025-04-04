@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- form -->
+    <form>
+        <!-- username -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" 
+                    id="username" 
+                    placeholder="e.g. Ravi" 
+                    autocomplete="off">
+        </div>
+
+        <!-- password -->
+         <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" >
+         </div>
+
+         <!-- salary -->
+          <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" id="salary">
+          </div>
+
+          <!-- date of birth -->
+           <div>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob" id="dob" >
+           </div>
+
+           <!-- email -->
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <!-- skills -->
+            <div>
+
+                <label>Select skills</label>
+                <!-- skill-1 -->
+                 <div>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">javascript</label>
+                 </div>
+                 <!-- skill-2 -->
+                 <div>
+                    <input type="checkbox" name="react" id="react">
+                    <label for="react">react</label>
+                 </div>
+                  <!-- skill-3 -->
+                  <div>
+                    <input type="checkbox" name="angular" id="angular">
+                    <label for="angular">angular</label>
+                 </div>
+            </div>
+
+            <!-- gender -->
+             <div>
+                <label>Select gender</label>
+                <!-- male -->
+                 <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                 </div>
+
+                 <!-- female -->
+                 <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                 </div>
+                  <!-- others -->
+                  <div>
+                    <input type="radio" name="gender" id="others">
+                    <label for="others">Others</label>
+                 </div>
+             </div>
+
+             <!-- upload a file -->
+              <div>
+                <label for="image">Select profile image</label>
+                <input type="file" name="image" id="image">
+              </div>
+
+              <!-- state selection -->
+               <div>
+                <label for="state">Select state</label>
+                <select name="state" id="state">
+                    <option value="telangana">Telangana</option>
+                    <option value="ap">Andhra pradesh</option>
+                    <option value="kerala">Kerala</option>
+                </select>
+               </div>
+
+               <!-- feedback -->
+                <div>
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" rows="5" cols="30"></textarea>
+                </div>
+
+            <!-- submit button -->
+             <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>
