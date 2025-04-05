@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 50px;
+    /* make parent as flex container */
+    display: flex;
+    flex-direction: row;
+    /* horizontal alignment */
+    /* justify-content:space-around; */
+    /* vertical alignemnt */
+    /* align-items:flex-end; */
+    
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+}
+
+.child-1{
+    background-color: red;
+    flex-grow: 1;
+}
+
+.child-2{
+    background-color: green;
+    flex-grow: 2;
+}
+
+.child-3{
+    background-color: blue;
+    flex-grow: 3;
+}
+
+
+/* 
+  600px
+  100+100+100=300px
+
+  remaining space 600-300=300px
+
+  300px ( 1+2+3 )
+   1- 50px  +100px =150px
+   2-100px  +100px =200px
+   3-150px  +100px =250px
+
+
+*/

@@ -3,3 +3,80 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+form{
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* background-color: rgb(176, 177, 178);
+    padding: 20px; */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="file"],
+textarea,select{
+    width: 100%;
+    padding: 2px;
+    font-size: 1.1rem;
+    border: 2px solid grey;
+    outline: none;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+.gap{
+    margin-bottom: 15px;
+}
+
+
+
+input:focus{
+    border: 2px solid orange;
+}
+
+
+input[type="checkbox"],
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: lightblue;
+    
+}
+
+
+/* stylke for required fileds */
+
+/* style when req field is valid */
+input:required:valid{
+    border: 2px solid green;
+}
+
+input:invalid:focus{
+    border: 2px solid red;
+}
+
+input:placeholder-shown{
+
+}
+
+
+
+button{
+    border: none;
+    background-color: lightseagreen;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* 
+button:hover{
+    background-color: rgb(9, 108, 103); 
+} */

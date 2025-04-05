@@ -13,40 +13,51 @@
     <!-- form -->
     <form>
         <!-- username -->
-        <div>
+        <div class="gap">
             <label for="username">Username</label>
             <input type="text" 
                     id="username" 
+                    name="username"
                     placeholder="e.g. Ravi" 
-                    autocomplete="off">
+                    autocomplete="off"
+                    required
+                    minlength="4" 
+                    maxlength="6"
+                    
+                    >
         </div>
 
         <!-- password -->
-         <div>
+         <div  class="gap">
             <label for="password">Password</label>
-            <input type="password" id="password" >
+            <input type="password" name="password" id="password" >
          </div>
 
          <!-- salary -->
-          <div>
+          <div  class="gap">
             <label for="salary">Salary</label>
-            <input type="number" name="salary" id="salary">
+            <input type="number" 
+                    name="salary" 
+                    id="salary" 
+                    min="10000"
+                    max="50000"
+                    >
           </div>
 
           <!-- date of birth -->
-           <div>
+           <div  class="gap">
             <label for="dob">Date of birth</label>
             <input type="date" name="dob" id="dob" >
            </div>
 
            <!-- email -->
-            <div>
+            <div  class="gap">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
             </div>
 
             <!-- skills -->
-            <div>
+            <div  class="gap">
 
                 <label>Select skills</label>
                 <!-- skill-1 -->
@@ -67,7 +78,7 @@
             </div>
 
             <!-- gender -->
-             <div>
+             <div  class="gap">
                 <label>Select gender</label>
                 <!-- male -->
                  <div>
@@ -88,13 +99,13 @@
              </div>
 
              <!-- upload a file -->
-              <div>
+              <div  class="gap">
                 <label for="image">Select profile image</label>
                 <input type="file" name="image" id="image">
               </div>
 
               <!-- state selection -->
-               <div>
+               <div  class="gap">
                 <label for="state">Select state</label>
                 <select name="state" id="state">
                     <option value="telangana">Telangana</option>
@@ -104,7 +115,7 @@
                </div>
 
                <!-- feedback -->
-                <div>
+                <div  class="gap">
                     <label for="feedback">Feedback</label>
                     <textarea name="feedback" id="feedback" rows="5" cols="30"></textarea>
                 </div>
@@ -116,3 +127,13 @@
 </body>
 
 </html>
+
+
+<!-- 
+required
+minlength
+maxlength
+pattern
+min
+max
+-->

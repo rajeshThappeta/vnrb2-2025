@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 700px;
+            margin: auto;
+            margin: 100px 0px;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        td[colspan]~td {
+            border-left: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+
+            <tr>
+                <th rowspan="2">Crieteria</th>
+                <th colspan="2">Proposed</th>
+                <th rowspan="2">Matched</th>
+                <th rowspan="2">Remarks</th>
+            </tr>
+            <tr>
+
+                <th>Trail-1</th>
+                <th>Trail-2</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>The device works buggy</td>
+                <td>passed</td>
+                <td>passed</td>
+                <td>100%</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td>The device works buggy</td>
+                <td>passed</td>
+                <td>passed</td>
+                <td>100%</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+
+                <td>functionality</td>
+                <td>100%</td>
+                <td>Passed</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
