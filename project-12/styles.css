@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    /* declare css cariables */
+   --light-red:#CE4F65;
+   --light-grey:#969696;
+   --dark-grey:#686767;  
+}
+
+
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-blog-title{
+    color: var(--light-grey);
+    font-size: 2.5rem;
+}
+
+nav span{
+    color: var(--light-red);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav form input{
+    background-color: var(--light-grey);
+    padding: 8px;
+    border: none;
+}
+
+nav form button{
+    border: none;
+    padding: 8px;
+    background-color: var(--light-red);
+    color:white;
+}
+
+nav ul a:hover{
+    background-color: var(--light-red);
+    padding: 5px;
+    border-radius: 4px;
+    color:white;
+}
+
+/* main styles */
+main{
+    background-color: var(--light-red);
+    padding: 30px 100px;
+}
+
+main .title{
+    color:white;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+main .title span{
+    font-size: 3rem;
+}
+
+main .main-side-heading{
+    color:white;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    
+}
+
+main .cards-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    gap: 30px;
+}
+
+main img{
+    width: 100%;
+}
+
+main .author-name{
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+main .author-desc{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding:10px 0px;
+}
+
+main .profile-button{
+    border: none;
+    padding: 8px;
+    background-image:linear-gradient( #d9334f,#CE4F65,#d1586c) ;
+    box-shadow: 0px 0px 10px white;
+}
+
+
+/* footer styles */
+footer{
+    display: flex;
+    padding: 100px;
+    background-color: rgb(182, 177, 177);
+    color:var(--dark-grey);
+    gap:100px;
+}
