@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    column-count: 4;
+    column-width: 200px;
+    column-rule-style: solid;
+    column-rule-color: brown;
+    column-rule-width: 5px;
+}
+
+h1{
+    column-span: all;
+}
+
+img{
+    display: block;
+    column-span: all;
+}

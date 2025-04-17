@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+    color:white;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    /* font-size: clamp(2rem,10vw,6rem); */
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 600px;
+}
+
+.h21{
+    display: none;
+}
+
+/* below 576px , bgc can be red */
+/* @media screen and (max-width:576px) {
+    body{
+        background-color: red;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    img{
+        display: none;
+    }
+} */
+
+/* 577px to 768px bgc can be blue */
+/* @media screen and (min-width:577px) and (max-width:768px) {
+    body{
+        background-color: blue;
+    }
+    h1{
+        font-size: 4rem;
+    }
+} */
+/* 769px to 992 px bgc can be ornage */
+/* @media screen and (min-width:769px) and (max-width:992px) {
+        body{
+            background-color: orange;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            display: none;
+        }
+} */
+/* above 993px bgc can be green */
+/* @media screen and (min-width:993px) {
+    body{
+        background-color: green;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .h21{
+        display: block;
+    }
+} */
+
+
+@media print {
+    body{
+        background-color: white;
+        color:black;
+    }
+}

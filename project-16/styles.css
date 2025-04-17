@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(2rem,9vw,5rem);
+}
+
+img{
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
