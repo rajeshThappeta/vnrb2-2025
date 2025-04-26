@@ -14,6 +14,87 @@
 
 <body>
 
+    <!-- responsive navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-warning px-3">
+        <!-- logo -->
+        <a href="#" class="navbar-brand">
+            <img src="../../assets/logos/lg1.png" width="70px" alt="">
+        </a>
+        <!-- button to replace the links in mobile view -->
+        <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+            <!-- menu -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Signin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+
+        <!-- modal component -->
+        <button class="btn btn-warning my-5" data-bs-target="#m" data-bs-toggle="modal">
+            Modal
+        </button>
+
+        <div class="modal fade" id="m" data-bs-backdrop="static">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        User info
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../assets/emp-profile-imgs/2.jpg" class="w-100" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum tempora sequi
+                            minima consequuntur nobis repellendus voluptate laboriosam, porro tempore.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <button class="btn btn-success" data-bs-target="#sidebar" data-bs-toggle="offcanvas">Click</button>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="sidebar">
+            <div class="offcanvas-header">Header</div>
+            <div class="offcanvas-body">Body</div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
