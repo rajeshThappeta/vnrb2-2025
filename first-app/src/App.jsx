@@ -1,35 +1,23 @@
 import "./App.css";
+import Product from "./components/Product";
 
 //create component
 function App() {
   //state
-  let username = "bhanu kumar";
-  let rollNo = 100;
-  let person = {
-    pid: 1234,
-    city: "hyderabad",
-  };
-  let marks = [10, 20, 30,40,50,10];
+  let productsList = [
+    { pid: 100, name: "TV", price: 6000 },
+    { pid: 200, name: "Washing machine", price: 90000 },
+    { pid: 300, name: "Vacuum cleaner", price: 100000 },
+  ];
 
-  // create  react element using jsx and return
   return (
     <div>
-      <h1>Welcome to React</h1>
-      <h2>Username : {username}</h2>
-      <h2>RollNo : {rollNo}</h2>
-      <h2>{person.pid}</h2>
-      <h2>{person.city}</h2>
-      {
-        marks.map((element,index)=><h3 key={index}>{element}</h3>)
-      }
+      {/* Nest Product component */}
+      <Product data={productsList[0]} />
+      <Product data={productsList[1]} />
+      <Product data={productsList[2]} />
     </div>
   );
 }
 
 export default App;
-
-
-//for , for of, while(cant return)
-//forEach() //wont return
-
-//filter,map
