@@ -1,5 +1,5 @@
 import "./App.css";
-import ApiDemo from "./components/ApiDemo";
+import FormDemo from "./components/FormDemo";
 
 //create component
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <ApiDemo />
+      <FormDemo />
     </div>
   );
 }

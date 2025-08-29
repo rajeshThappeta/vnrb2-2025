@@ -14,7 +14,7 @@ function ApiDemo() {
   //It will execute effect funciton only after initial rendering
   useEffect(() => {
     getUsers();
-  }, []);
+  },[]);
 
   //retur react element
   return (
