@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 
 function FormDemo() {
-  let { register, handleSubmit } = useForm();
+  let { register, handleSubmit ,formState:{errors}} = useForm();
 
+
+  //console.log("errors :",errors)
   const onFormSubmit = (userObj) => {
     console.log(userObj);
   };
@@ -12,8 +14,15 @@ function FormDemo() {
       <form className=" w-50 mx-auto mt-5" onSubmit={handleSubmit(onFormSubmit)}>
         {/* username */}
         <input type="text" {...register("username",{required:true,minLength:4,maxLength:6})} className="form-control mb-3" placeholder="Username" />
+        {/* validation error messages of username */}
+        {errors.username?.type==='required' && <p className="text-danger">Username is required</p>}
+        {errors.username?.type==='minLength' && <p className="text-danger">Min length should be 4</p>}
+        {errors.username?.type==='maxLength' && <p className="text-danger">Max length is 6</p>}
         {/* age */}
-        <input type="number" {...register("age")} className="form-control mb-3" placeholder="Age" />
+        <input type="number" {...register("age",{min:18,max:25})} className="form-control mb-3" placeholder="Age" />
+        {/* validation error messages for age */}
+        { errors.age?.type==='min'&&<p className="text-danger">Min length is 18</p>}
+        { errors.age?.type==='max'&&<p className="text-danger">Max length is 25</p>}
         {/* course */}
         <select {...register("course")} className="form-select mb-3">
           <option value="cse">CSE</option>
@@ -55,3 +64,13 @@ export default FormDemo;
 
 //<button type="button">test</button>  ---> onClick event
 //button type="submit">test</button>   ----> onSubmit event
+
+
+
+
+// ?:  condition ? react- elemen-1 : react-element-2   if-else
+//&&    condition && react-element     if 
+
+
+
+
