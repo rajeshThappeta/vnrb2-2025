@@ -1,3 +1,22 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "59ae",
+      "username": "test100",
+      "dob": "2026-09-11",
+      "email": "test100@mail.com"
+    },
+    {
+      "id": "0990",
+      "username": "test2",
+      "dob": "2025-09-11",
+      "email": "test2@mail.com"
+    },
+    {
+      "id": "e804",
+      "username": "test3",
+      "dob": "2025-09-11",
+      "email": "test3@mail.com"
+    }
+  ]
 }

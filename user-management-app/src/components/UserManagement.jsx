@@ -40,7 +40,19 @@ function UserManagement() {
   }
 
   
-  function modifyUser() {}
+  async function modifyUser(modifiedUserObj) {
+    console.log(modifiedUserObj)
+    //Make HTTP PUT request
+    let res=await fetch(`http://localhost:3000/users/${modifiedUserObj.id}`,{
+      method:"PUT",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(modifiedUserObj)
+    })
+
+    if(res.status===200){
+      readUsers()
+    }
+  }
 
   // read users once the component is loaded
   useEffect(() => {
