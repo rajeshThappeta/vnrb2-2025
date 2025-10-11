@@ -13,18 +13,10 @@ function CounterContext({ children }) {
     setCounter(counter - 1);
   }
 
-  //state-2
-  let [counter1, setCounter1] = useState(200);
-
-  function increment1() {
-    setCounter1(counter1 + 1);
-  }
-  function decrement1() {
-    setCounter1(counter1 - 1);
-  }
+  
 
   return (
-    <counterContextObj.Provider value={{ counter, increment, decrement, counter1, increment1, decrement1 }}>
+    <counterContextObj.Provider value={{ counter, increment, decrement}}>
       {children}
     </counterContextObj.Provider>
   );
