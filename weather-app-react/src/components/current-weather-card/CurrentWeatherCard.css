@@ -1,0 +1,56 @@
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  background: linear-gradient(135deg, #6fb1fc 0%, #4364f7 50%, #0052d4 100%);
+  color: #fff;
+}
+
+.weather-card .card-header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  padding: 1rem 1.5rem;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.card-body {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 20px 20px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sun-info {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.sun-info span {
+  color: #ffe082;
+}

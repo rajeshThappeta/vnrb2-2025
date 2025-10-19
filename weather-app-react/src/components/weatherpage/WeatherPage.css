@@ -1,0 +1,60 @@
+.weather-page-bg {
+  background: linear-gradient(180deg, #a0c4ff 0%, #89c2ff 25%, #61a5ff 55%, #0052d4 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+/* Optional subtle overlay for depth */
+.weather-page-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.25) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0,0,0,0.2) 0%, transparent 70%);
+  z-index: -1;
+}
+
+
+/* Wrapper for horizontal scroll */
+.forecast-scroll-wrapper {
+  overflow-x: auto;       /* enables horizontal scroll */
+  overflow-y: hidden;     /* prevent vertical scroll */
+  white-space: nowrap;    /* prevents wrapping of flex items */
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* Forecast cards container */
+.forecast-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual ForecastDay cards */
+.forecast-card {
+  flex: 0 0 auto;      /* prevents shrinking, keeps fixed width */
+  min-width: 100px;    /* adjust card size */
+  max-width: 120px;
+  display: inline-block;
+}
+
+
+/* Scrollbar styling for forecast cards */
+ .d-flex.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.d-flex.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.d-flex.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+} 

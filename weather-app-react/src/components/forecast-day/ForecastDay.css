@@ -1,0 +1,28 @@
+.forecast-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.4) transparent;
+}
+
+.forecast-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecast-container::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+.forecast-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.6);
+}
+
+/* ForecastDay card responsiveness */
+.forecast-card {
+  flex: 0 0 auto; /* prevents shrinking, keeps fixed width */
+  min-width: 100px; /* adjust based on desired size */
+  max-width: 120px;
+}

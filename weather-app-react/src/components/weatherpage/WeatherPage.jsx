@@ -1,6 +1,7 @@
-import SearchBar from "./SearchBar";
-import CurrentWeatherCard from "./CurrentWeatherCard";
-import ForecastDay from "./ForecastDay";
+import "./WeatherPage.css";
+import SearchBar from "../SearchBar";
+import CurrentWeatherCard from "../current-weather-card/CurrentWeatherCard";
+import ForecastDay from "../forecast-day/ForecastDay";
 import { useEffect, useState } from "react";
 
 function WeatherPage() {
@@ -10,15 +11,18 @@ function WeatherPage() {
   const [city, setCity] = useState("Hyderabad");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchTrigger, setSearchTrigger] = useState(0);
 
   //API key
-  const apiKey = "32fb1319e5d2462d3820c7690ae1f392";
+
+  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
   // handle search by city
   const handleSearch = (newCity) => {
     if (newCity !== null) {
       //update city
       setCity(newCity);
+      setSearchTrigger((prev) => prev + 1); // Force re-fetch
       //reset state
       setCurrentWeather(null);
       setForecastData(null);
@@ -49,9 +53,6 @@ function WeatherPage() {
       const currentData = await currentRes.json();
       const forecastList = await forecastRes.json();
 
-      // console.log("Current weather :", currentData);
-      // console.log("Forecast data :", forecastList);
-
       //update state
       setCurrentWeather(currentData);
       setForecastData(forecastList);
@@ -67,28 +68,23 @@ function WeatherPage() {
   //fetch data when app launches
   useEffect(() => {
     fetchData();
-  }, [city]);
+  }, [city, searchTrigger]);
 
   return (
-    <div className="container">
+    <div className="weather-page-bg min-vh-100 d-flex flex-column align-items-center py-4">
       <SearchBar onSearch={handleSearch} isLoading={isLoading} />
 
-      {/* error */}
-      {
-        error!==null && <div className="bg-danger text-white fs-2 p-4">
-            {error}
-        </div>
-      }
-
-      {/* pass currebtData as prop only if it is not null */}
+      {error && <div className="bg-danger text-white fs-5 p-3 rounded shadow">{error}</div>}
 
       {currentWeather && <CurrentWeatherCard data={currentWeather} city={city} />}
 
-      {forecastData !== null && (
-        <div className="d-flex overflow-x-auto">
-          {forecastData.list.map((forecastObj, index) => (
-            <ForecastDay data={forecastObj} key={index} />
-          ))}
+      {forecastData && (
+        <div className="forecast-scroll-wrapper my-3 w-100">
+          <div className="forecast-container d-flex">
+            {forecastData.list.map((forecastObj, index) => (
+              <ForecastDay data={forecastObj} key={index} />
+            ))}
+          </div>
         </div>
       )}
     </div>
